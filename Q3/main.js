@@ -1,5 +1,5 @@
 //Javascript document
-let url = 'https://jessicagilfillan.github.io/Final_Exam_Prep/Q3/cats.json';
+let url = 'https://ronitom13.github.io/COMP1073FinalExam/Q3/cats.json';
 
 let catsButton =  document.getElementById('btn1');
 catsButton.addEventListener('click', function(){
@@ -21,7 +21,7 @@ fetch(url).then(function(response){
 
                 let section = document.querySelector('section');
 
-                img.setAttribute('src', cats[i].image);
+                img.setAttribute('src', 'https://github.com/ronitom13/COMP1073FinalExam/tree/master/Q3/assets' + cats[i].image);
                 img.setAttribute('alt', cats[i].name);
 				h2.textContent = cats[i].name;
                 p1.textContent = 'Species: ' +  cats[i].species;
